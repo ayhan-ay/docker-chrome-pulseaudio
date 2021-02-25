@@ -27,7 +27,7 @@ RUN adduser --disabled-password --gecos "Chrome User" --uid 5001 chrome
 
 # Add SSH public key for the chrome user
 RUN mkdir /home/chrome/.ssh
-ADD id_rsa.pub /home/chrome/.ssh/authorized_keys
+#ADD id_rsa.pub /home/chrome/.ssh/authorized_keys
 RUN chown -R chrome:chrome /home/chrome/.ssh
 
 # Set up the launch wrapper
